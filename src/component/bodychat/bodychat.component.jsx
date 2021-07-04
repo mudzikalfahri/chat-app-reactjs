@@ -6,7 +6,7 @@ function BodyChat(props) {
     return (
         <div className='bodychat'>
             {props.messages.map(message => (
-                <ChatBaloon message={message}/>
+                <ChatBaloon key={message.id} message={message.message}/>
             ))}
         </div>
     )

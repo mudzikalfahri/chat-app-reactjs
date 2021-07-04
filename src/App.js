@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     data.collection('messages').orderBy('time', 'asc').onSnapshot((snapshot) => {
-      setMessages(snapshot.docs.map(doc => doc.data().message))
+      setMessages(snapshot.docs.map(doc => ({message: doc.data().message, id:doc.id})))
     })
   }, [])
 
