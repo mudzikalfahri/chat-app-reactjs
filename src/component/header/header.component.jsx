@@ -8,11 +8,11 @@ function Header() {
     return (
         <AppBar position="static">
             <Toolbar className='header'>
-                <IconButton edge="start" className='icon' color="inherit" aria-label="menu">
+                <Button color="inherit">
                 <MenuRoundedIcon />
-                </IconButton>
+                </Button>
                 <Typography variant="h6" className='title'>
-                Live World Chat
+                Message App
                 </Typography>
                 <Button color="inherit"><AccountBoxRoundedIcon/></Button>
             </Toolbar>
